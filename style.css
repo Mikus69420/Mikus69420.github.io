@@ -36,14 +36,10 @@ body {
     margin-right: auto;
 }
 
-img {
-  width: 500px; 
-  height: 500px; 
-}
 
 @media (max-width:767px){
 img {
   width: 200px; 
-  height: 100px; 
+  height: 200px; 
 }
 }
