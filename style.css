@@ -36,7 +36,14 @@ body {
     margin-right: auto;
 }
 
-form {
-  width: 300;
-  height: 100;
+img {
+  width: 500px; 
+  height: 500px; 
+}
+
+@media (max-width:767px){
+img {
+  width: 200px; 
+  height: 200px; 
+}
 }
