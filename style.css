@@ -90,7 +90,6 @@ ul {
 
 #info {
   display: none; /* Hidden by default */
-  width: 100%; /* Full width */
   background-color: silver;
   margin:16px 32px 16px 32px;
   padding:8px;
