@@ -16,38 +16,39 @@
         <a href="#color-gradient">Krāsu Gradientu Mikseris</a>
         <a href="#color-generator">Krāsu Ģenerātors</a>
     </div>
+    <div id="content">
+        <h1>Krāsu Mikseris</h1>
+        <img src="images/paint_buckets.jpg" alt="paint buckets" id="paint_buckets">
+        <div style="display: flex; flex-direction: column;">
+            <div id="colors-mix">
+                <h2>Krāsu jaukšana</h2>
+                <form>
+                    <label for="color1">1. Krāsa (Sarkans)</label>
+                    <input id="color1" type="number" min="0" max="255"><br><br>
 
-    <h1>Krāsu Mikseris</h1>
-    <img src="images/paint_buckets.jpg" alt="paint buckets" id="paint_buckets">
-    <div style="display: flex; flex-direction: column;">
-        <div id="colors-mix">
-            <h2>Krāsu jaukšana</h2>
-            <form>
-                <label for="color1">1. Krāsa (Sarkans)</label>
-                <input id="color1" type="number" min="0" max="255"><br><br>
+                    <label for="color2">2. Krāsa (Zaļš)</label>
+                    <input id="color2" type="number" min="0" max="255"><br><br>
 
-                <label for="color2">2. Krāsa (Zaļš)</label>
-                <input id="color2" type="number" min="0" max="255"><br><br>
+                    <label for="color3">3. Krāsa (Zils)</label>
+                    <input id="color3" type="number" min="0" max="255"><br><br>
 
-                <label for="color3">3. Krāsa (Zils)</label>
-                <input id="color3" type="number" min="0" max="255"><br><br>
-
-                <button onclick="mixColors()">Sajauc krāsas</button><br><br>
-                <h2>Krāsu jaukšanas rezultāts</h2>
-                <div id="result"></div>
-            </form>
-        </div>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>1. Krāsa</th>
-                        <th>2. Krāsa</th>
-                        <th>3. Krāsa</th>
-                        <th>Rezultāts</th>
-                    </tr>
-                </thead>
-            </table>
+                    <button onclick="mixColors()">Sajauc krāsas</button><br><br>
+                    <h2>Krāsu jaukšanas rezultāts</h2>
+                    <div id="result"></div>
+                </form>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1. Krāsa</th>
+                            <th>2. Krāsa</th>
+                            <th>3. Krāsa</th>
+                            <th>Rezultāts</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
 </body>

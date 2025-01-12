@@ -54,3 +54,7 @@ body {
 #result {
   height: 200px;
 }
+
+#content {
+  margin: 32px;
+}
