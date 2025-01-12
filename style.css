@@ -83,3 +83,7 @@ ul {
   gap: 16px;
   justify-content: center; 
 }
+
+#info {
+  display: none;
+}
