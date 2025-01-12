@@ -26,3 +26,4 @@ function generateRandomColor() {
     document.getElementById('random-color-result').innerText = color;
     document.getElementById('random-color-result').style.backgroundColor = color;
 }
+
