@@ -15,11 +15,13 @@ let hexColor=  rgbToHex(color1,color2,color3);
     document.getElementById('result').style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
     $('#resulttable tbody').empty();
     $("#resulttable").json2html(data, template);
+    document.getElementById("clearColorsButton").style.display = "block";
 }
 
 function clearColors() {
     data = [];
     $('#resulttable tbody').empty();
+    document.getElementById("clearColorsButton").style.display = "none";
 }
 
 function getRandomColor() {

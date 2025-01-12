@@ -98,3 +98,7 @@ ul {
 #resulttable {
   width: 100%;
 }
+
+#clearColorsButton {
+   display: none;  
+}
