@@ -32,4 +32,5 @@ body {
 
 #paint_buckets {
     align-items: center;
+    width: 100%;
 }
