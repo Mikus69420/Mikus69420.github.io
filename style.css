@@ -62,9 +62,6 @@ body {
 
 #random-color-result {
   height: 200px;
-}
-
-#random-color-result {
   text-align: center;
   transition: background-color 0.5s ease-in-out;
 }
