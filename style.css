@@ -52,3 +52,11 @@ body {
   padding-left: 32px;
   padding-right: 32px;
 }
+
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
