@@ -50,6 +50,37 @@
                 </table>
             </div>
         </div>
+        <div style="display: flex; flex-direction: row; gap: 16px;">
+            <div class="colors-mix">
+                <h2>Krāsu jaukšana</h2>
+                <form>
+                    <label for="color1">1. Krāsa (Sarkans)</label>
+                    <input id="color1" type="number" min="0" max="255"><br><br>
+
+                    <label for="color2">2. Krāsa (Zaļš)</label>
+                    <input id="color2" type="number" min="0" max="255"><br><br>
+
+                    <label for="color3">3. Krāsa (Zils)</label>
+                    <input id="color3" type="number" min="0" max="255"><br><br>
+
+                    <button onclick="mixColors()">Sajauc krāsas</button><br><br>
+                    <h2>Krāsu jaukšanas rezultāts</h2>
+                    <div id="result"></div>
+                </form>
+            </div>
+            <div class="colors-mix">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1. Krāsa,</th>
+                            <th>2. Krāsa,</th>
+                            <th>3. Krāsa,</th>
+                            <th>Rezultāts</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 
