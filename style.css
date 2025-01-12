@@ -41,9 +41,9 @@ img {
   height: 500px; 
 }
 
-@media (max-width:767px){
-img {
-  width: 200px; 
-  height: 200px; 
-}
+@media only screen and (max-width: 500px) {
+  img {
+    object-fit: cover;
+    width: 100%;
+  } 
 }
