@@ -23,7 +23,7 @@ function generateColor() {
 
     document.getElementById('RandomColor').style.backgroundColor = hexColor;
     document.getElementById('colorHex').innerText = hexColor;
-    document.getElementById('colorRgb').innerText = `RGB(${rgbColor})`;
+    document.getElementById('colorRgb').innerText = `RGB(${rgbColor.split(', ').join(',')})`;
 }
 
 function hexToRgb(hex) {
