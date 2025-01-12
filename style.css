@@ -44,6 +44,6 @@ img {
 @media (max-width:767px){
 img {
   width: 200px; 
-  height: 200px; 
+  height: 100px; 
 }
 }
