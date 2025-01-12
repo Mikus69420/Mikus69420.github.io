@@ -11,25 +11,13 @@ let result = [];
 
 
 
-
-
-
-
-
-function generateColor() {
-    let randomColor = Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
-    let hexColor = `#${randomColor}`;
-    let rgbColor = hexToRgb(hexColor);
-
-    document.getElementById('RandomColor').style.backgroundColor = hexColor;
-    document.getElementById('colorHex').innerText = hexColor;
-    document.getElementById('colorRgb').innerText = `RGB(${rgbColor.split(', ').join(',')})`;
+function getRandomColor() {
+    const randomValue = () => Math.floor(Math.random() * 256);
+    return `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`;
 }
 
-function hexToRgb(hex) {
-    let bigint = parseInt(hex.slice(1), 16);
-    let r = (bigint >> 16) & 255;
-    let g = (bigint >> 8) & 255;
-    let b = bigint & 255;
-    return `${r}, ${g}, ${b}`;
+function generateRandomColor() {
+    const color = getRandomColor();
+    document.getElementById('random-color-result').innerText = color;
+    document.getElementById('random-color-result').style.backgroundColor = color;
 }
