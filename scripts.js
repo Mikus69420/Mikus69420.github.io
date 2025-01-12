@@ -13,6 +13,7 @@ function mixColors() {
 
     document.getElementById('result').style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
      $("#resulttable").json2html(data,template);
+    new DataTable('#resulttable');
 }
 
 function getRandomColor() {
