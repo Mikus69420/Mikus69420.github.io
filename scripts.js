@@ -7,7 +7,13 @@ function mixColors() {
 
 }
 
-let result = [];
+let template = {'<>':'div','html':'${c1} ${c2} ${c3} ${res}'};
+
+let result = [
+    {"c1":"23","c2":"34","c3":"128","res":"res1"},
+    {"c1":"23","c2":"34","c3":"128","res":"res2"},
+    {"c1":"23","c2":"34","c3":"128","res":"res3"},    
+];
 
 
 
