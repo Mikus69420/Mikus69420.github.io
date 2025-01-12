@@ -31,13 +31,11 @@ function generateRandomColor() {
     const color = getRandomColor();
     document.getElementById('random-color-result').style.backgroundColor = color;
     document.getElementById('random-color-result').innerHTML = color;
-
-
 }
 
 function showInfo() {
     var div = document.getElementById('info');
-    div.style.display = div.style.display == "none" ? "block" : "none";
+    div.style.display = div.style.display == "block" ? "none" : "block";
 }
 
 function rgbToHex(red, green, blue) {
