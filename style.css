@@ -65,3 +65,18 @@ body {
   text-align: center;
   transition: background-color 0.5s ease-in-out;
 }
+
+
+.colorg1, .colorg2 {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.gradientBtn {
+  padding: 8px;
+  margin-left: 16px;
+  cursor: pointer;
+}
