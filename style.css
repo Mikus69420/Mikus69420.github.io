@@ -50,3 +50,7 @@ body {
   border: 5px solid gray;
   border-radius: 6px;
 }
+
+#result {
+  height: auto;
+}
