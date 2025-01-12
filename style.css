@@ -61,7 +61,7 @@ body {
 }
 
 #random-color-result {
-  padding: 80px;
+  padding: 100px;
   height: 200px;
   text-align: center;
   transition: background-color 0.5s ease-in-out;
