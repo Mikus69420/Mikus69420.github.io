@@ -1,4 +1,4 @@
-let template = {'<>':'div','html':'${c1} ${c2} ${c3} ${res}'};
+let template = {'<>':'table','html':'<tr><td>${c1}</td><td>${c2}</td><td>${c3}</td><td>${res}</td></tr>'};
 
 let data = [
     {"c1":"23","c2":"34","c3":"128","res":"res1"},
