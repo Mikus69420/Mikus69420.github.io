@@ -47,3 +47,7 @@ body {
   height: 100px; 
 }
 }
+
+#colors {
+  padding-left: 32px;
+}
