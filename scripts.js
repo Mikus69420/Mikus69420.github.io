@@ -25,3 +25,11 @@ function generateColor() {
     document.getElementById('colorHex').innerText = hexColor;
     document.getElementById('colorRgb').innerText = `RGB(${rgbColor})`;
 }
+
+function hexToRgb(hex) {
+    let bigint = parseInt(hex.slice(1), 16);
+    let r = (bigint >> 16) & 255;
+    let g = (bigint >> 8) & 255;
+    let b = bigint & 255;
+    return `${r}, ${g}, ${b}`;
+}
