@@ -2,40 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.2.3/json2html.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-
     <ul class="topnav">
         <li><a href="#color-mixer">Krāsu Mikseris</a></li>
         <li><a href="#color-gradient">Krāsu Toņu Mikseris</a></li>
         <li><a href="#color-generator">Krāsu Ģenerātors</a></li>
     </ul>
-
+    <br />
+    <button onclick="showInfo()" id="infoButton">Autors</button>
+    <div id="info">
+        <h3>Autora Informācija</h3>
+        <p><b>Autora vārds, uzvārds, studenta kods:</b></p>
+        <p><i>Mikus Baumanis, mb24060</i></p>
+    </div>
     <div id="content">
         <h1>Krāsu Mikseris</h1>
-        <img src="images/paint_buckets.jpg" alt="paint buckets" id="paint_buckets">
+        <img src="images/paint_buckets.jpg" alt="paint buckets" id="paint_buckets" />
         <div class="class-all">
             <div class="colors-mix">
                 <h2>Krāsu jaukšana</h2>
                 <!-- <form> -->
-                <label for="color1">1. Krāsa (Sarkans)</label>
-                <input id="color1" type="number" min="0" max="255" value="255"><br><br>
-
-                <label for="color2">2. Krāsa (Zaļš)</label>
-                <input id="color2" type="number" min="0" max="255" value="25"><br><br>
-
-                <label for="color3">3. Krāsa (Zils)</label>
-                <input id="color3" type="number" min="0" max="255" value="125"><br><br>
-
-                <button onclick="mixColors()">Sajauc krāsas</button><br><br>
+                <table id="table-grid">
+                    <tr>
+                        <td><label for="color1">1.Krāsa (Sarkana)</label></td>
+                        <td><input id="color1" type="number" min="0" max="255" value="255" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color2">2.Krāsa (Zaļa)</label></td>
+                        <td><input id="color2" type="number" min="0" max="255" value="63" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color3">3.Krāsa (Zila)</label></td>
+                        <td><input id="color3" type="number" min="0" max="255" value="127" /></td>
+                    </tr>                    
+                </table>
+                <button onclick="mixColors()">Sajaukt krāsas</button>
+                <br />
                 <h2>Krāsu jaukšanas rezultāts</h2>
                 <div id="result"></div>
                 <!-- </form> -->
@@ -44,43 +55,32 @@
                 <table id="resulttable">
                     <thead>
                         <tr>
-                            <td>Red:</td>
-                            <td>Green:</td>
-                            <td>Blue:</td>
-                            <td>Result:</td>
+                            <td>Sarkana:</td>
+                            <td>Zaļa:</td>
+                            <td>Zila:</td>
+                            <td>Rezultāts:</td>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody></tbody>                    
                 </table>
+                <button onclick="clearColors()">Nodzēst rezultātus</button>
             </div>
         </div>
         <div class="class-all">
             <div class="colors-mix">
                 <h2>Krāsu Toņu Mikseris</h2>
-                <div id="color-mixer">
-                    
-                </div>
-
+                <div id="color-mixer"></div>
             </div>
             <div class="colors-mix">
                 <h2>Krāsu Ģenerators</h2>
                 <div id="color-generator">
                     <button onclick="generateRandomColor()">Ģenerēt Krāsu</button>
-                    <br><br />
+                    <br /><br />
                     <div id="random-color-result"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <button onclick="showInfo()" id="infoButton">Autors</button>
-        <div id="info">
-            <h3>Autora Informācija</h3>
-            <p><b>Autora vārds, uzvārds, studenta kods:</b></p>
-            <p><i>Mikus Baumanis, mb24060</i></p>
-        </div>
-    </div>
-    
 </body>
 
 </html>
