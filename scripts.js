@@ -27,5 +27,6 @@ function generateRandomColor() {
 }
 
 function showInfo() {
-    
+    var div = document.getElementById('info');
+    div.style.display = div.style.display == "none" ? "block" : "none";
 }
