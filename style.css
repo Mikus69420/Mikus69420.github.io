@@ -38,12 +38,12 @@ body {
 
 #paint_buckets {
   width: 500px; 
-  height: 200px; 
+  height: 100px; 
 }
 
 @media (max-width:767px){
 #paint_buckets {
   width: 200px; 
-  height: 200px; 
+  height: 100px; 
 }
 }
