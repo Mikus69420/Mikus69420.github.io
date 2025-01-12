@@ -24,11 +24,6 @@ body {
   .topnav a:hover {
     color: #333;
   }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
 
 #paint_buckets {
     display: block;
