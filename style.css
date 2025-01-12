@@ -1,46 +1,47 @@
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: blue;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    color: #333;
-  }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-#paint_buckets {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #333;
 }
 
 #paint_buckets {
-  width: 600px; 
-  height: 200px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width:767px){
 #paint_buckets {
-  width: 200px; 
-  height: 100px; 
+  width: 600px;
+  height: 200px;
 }
+
+@media (max-width:767px) {
+  #paint_buckets {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 .colors-mix {
