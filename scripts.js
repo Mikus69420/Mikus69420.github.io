@@ -13,7 +13,7 @@ let hexColor=  rgbToHex(color1,color2,color3);
     data.push({ "c1": color1 , "c2": color2 , "c3": color3, "res": hexColor });
 
     document.getElementById('result').style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
-    $('#resulttable tbody').empty();
+    $('#resulttable tbody').empty();x
     $("#resulttable").json2html(data, template);
     document.getElementById("clearColorsButton").style.display = "block";
 }
@@ -45,3 +45,4 @@ function showInfo() {
     var div = document.getElementById('info');
     div.style.display = div.style.display == "block" ? "none" : "block";
 }
+

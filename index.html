@@ -47,7 +47,7 @@
                     </tr>
                 </table>
                 <button onclick="mixColors()">Sajaukt krāsas</button>
-                <hr/>
+                <hr />
                 <div id="result"></div>
                 <!-- </form> -->
             </div>
@@ -69,18 +69,31 @@
         <div class="class-all">
             <div class="colors-mix">
                 <h2>Krāsu Toņu Mikseris</h2>
-                <div id="color-gradient"></div>
+                <div>
+
+                    <div class="cont">
+                        <input type="color" class="gcolors c1" />
+                        <input type="color" class="gcolors c2" />
+                        <br />
+                        <button class="randomColorBtn">Random</button>
+                    </div>
+                    <br />
+                    <div class="cont" id="gradient-cont"></div>
+
+                </div>
+
             </div>
             <div class="colors-mix">
-                <h2>Krāsu Ģenerators</h2> 
+                <h2>Krāsu Ģenerators</h2>
                 <div id="color-generator">
                     <button onclick="generateRandomColor()">Ģenerēt Krāsu</button>
-                    <br /><br />
+                    <br />
                     <div id="random-color-result"></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="gradient.js"></script>
 
 </html>
