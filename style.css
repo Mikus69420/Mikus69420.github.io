@@ -59,11 +59,11 @@ ul {
 }
 
 #result {
-  height: 200px;
+  height: 100px;
 }
 
 #content {
-  margin: 32px;
+  /* margin: 32px; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -80,6 +80,7 @@ ul {
 .class-all {
   display: flex; 
   flex-direction: row; 
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: center; 
 }
@@ -89,8 +90,16 @@ ul {
 }
 
 #info {
-  display: none;
-  margin-left: 32px;
+  display: none; /* Hidden by default */
+  background-color: silver;
+  margin:16px 32px 16px 32px;
+  padding:8px;
 }
 
-/* 16 selectors ^ */
+#resulttable {
+  width: 100%;
+}
+
+#clearColorsButton {
+   display: none;  
+}
