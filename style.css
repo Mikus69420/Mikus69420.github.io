@@ -11,6 +11,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 .topnav {
   overflow: hidden;
   background-color: blue;
@@ -78,11 +79,11 @@ ul {
 }
 
 .class-all {
-  display: flex; 
-  flex-direction: row; 
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 #infoButton {
@@ -90,10 +91,11 @@ ul {
 }
 
 #info {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   background-color: silver;
-  margin:16px 32px 16px 32px;
-  padding:8px;
+  margin: 16px 32px 16px 32px;
+  padding: 8px;
 }
 
 #resulttable {
@@ -101,7 +103,7 @@ ul {
 }
 
 #clearColorsButton {
-   display: none;  
+  display: none;
 }
 
 section {

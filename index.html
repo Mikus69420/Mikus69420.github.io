@@ -31,19 +31,19 @@
         <div class="class-all">
             <div id="color-mixer" class="colors-mix">
                 <h2>Krāsu jaukšana</h2>
-                <!-- <form> -->
+                <!-- <form action="https://www.w3schools.com/action_page.php" method="post"> -->
                 <table id="table-grid">
                     <tr>
                         <td><label for="color1">1.Krāsa (Sarkana)</label></td>
-                        <td><input id="color1" type="number" min="0" max="255" value="255" /></td>
+                        <td><input id="color1" type="number" min="0" max="255" value="255" name="color1" /></td>
                     </tr>
                     <tr>
                         <td><label for="color2">2.Krāsa (Zaļa)</label></td>
-                        <td><input id="color2" type="number" min="0" max="255" value="63" /></td>
+                        <td><input id="color2" type="number" min="0" max="255" value="63" name="color2" /></td>
                     </tr>
                     <tr>
                         <td><label for="color3">3.Krāsa (Zila)</label></td>
-                        <td><input id="color3" type="number" min="0" max="255" value="127" /></td>
+                        <td><input id="color3" type="number" min="0" max="255" value="127" name="color3" /></td>
                     </tr>
                 </table>
                 <button onclick="mixColors()">Sajaukt krāsas</button>
@@ -72,12 +72,12 @@
                 <div>
 
                     <div class="cont">
-                        <input type="color" class="gcolors c1" />
-                        <input type="color" class="gcolors c2" />
+                        <input id="c1" type="color" class="gcolors" />
+                        <input id="c2" type="color" class="gcolors" />
                         <br />
-                        <button class="randomColorBtn">Pārsteidz mani</button>
+                        <button id="randomColorBtn">Pārsteidz mani</button>
                     </div>
-                    <br />
+                    <hr />
                     <div class="cont" id="gradient-cont"></div>
 
                 </div>
@@ -87,7 +87,7 @@
                 <h2>Krāsu Ģenerators</h2>
                 <div id="color-generator">
                     <button onclick="generateRandomColor()">Ģenerēt Krāsu</button>
-                    <br />
+                    <hr />
                     <div id="random-color-result"></div>
                 </div>
             </div>
