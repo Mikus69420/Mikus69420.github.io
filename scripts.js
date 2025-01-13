@@ -18,6 +18,12 @@ let hexColor=  rgbToHex(color1,color2,color3);
     document.getElementById("clearColorsButton").style.display = "block";
 }
 
+
+function rgbToHex(red, green, blue) {
+    const rgb = (red << 16) | (green << 8) | (blue << 0);
+    return '#' + (0x1000000 + rgb).toString(16).slice(1);
+  }
+
 function clearColors() {
     data = [];
     $('#resulttable tbody').empty();
@@ -39,8 +45,3 @@ function showInfo() {
     var div = document.getElementById('info');
     div.style.display = div.style.display == "block" ? "none" : "block";
 }
-
-function rgbToHex(red, green, blue) {
-    const rgb = (red << 16) | (green << 8) | (blue << 0);
-    return '#' + (0x1000000 + rgb).toString(16).slice(1);
-  }
